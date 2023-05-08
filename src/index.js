@@ -1,13 +1,25 @@
 import ReactDOM from 'react-dom';
-const elem1 = <span>Hello</span>;
-const elem2 = <span>world</span>;
+import paintings from "./paintings.json";
 
-const element = <div>
-  {elem1}
-  {elem2}
+// Компонент
+function Painting(props) {
+return (
+  <div>
+  <img src="" alt="{data.title}" width='480'/>
+  <h2></h2>
+  <p>
+    Автор: <a href=" "></a>
+  </p>
+  <p>Цена:кредитов</p>
+  <p>Доступность: заканчивается или есть в наличии</p>
+  <button type='button'>Добавить в корзину</button>
 </div>
-console.log(element);
-ReactDOM.render(element, document.querySelector('#root'));
+)
+}
+
+
+ReactDOM.render(<Painting />, document.querySelector("#root"));
+
 // =======================
 // import React from 'react';
 // import ReactDOM from 'react-dom/client';
