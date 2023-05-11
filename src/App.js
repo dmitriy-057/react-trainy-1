@@ -4,26 +4,17 @@ import paintings from "./paintings.json";
 
 export default function App() {
 return <div>
+    {paintings.map(painting => (
     <Painting 
-    imgUrl={paintings[0].url} 
-    title={paintings[0].title} 
-    authorUrl={paintings[0].author.url} 
-    authorTag={paintings[0].author.tag}
-    price={paintings[0].price}
+    key={painting.id}
+    imgUrl={painting.url} 
+    title={painting.title} 
+    authorUrl={painting.author.url} 
+    authorTag={painting.author.tag}
+    price={painting.price}
+    quantity={painting.quantity}
     />
-    <Painting 
-    imgUrl={paintings[1].url} 
-    title={paintings[1].title} 
-    authorUrl={paintings[1].author.url} 
-    authorTag={paintings[1].author.tag}
-    price={paintings[1].price}
-    />
-    <Painting 
-    imgUrl={paintings[2].url} 
-    title={paintings[2].title} 
-    authorUrl={paintings[2].author.url} 
-    authorTag={paintings[2].author.tag}
-    price={paintings[2].price}
-    />
+    ))}
 </div>
 }
+
