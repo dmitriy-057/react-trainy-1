@@ -19,10 +19,10 @@ export default function Painting(props) {
   }
 
   Painting.propTypes = {
-    imgUrl: PropTypes.string,
-    title: PropTypes.string,
-    authoUrl: PropTypes.string,
-    authorTag: PropTypes.string,
-    price: PropTypes.number,
-    quantity: PropTypes.number,
+    imgUrl: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    authoUrl: PropTypes.string.isRequired,
+    authorTag: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    quantity: PropTypes.number.isRequired,
 }
