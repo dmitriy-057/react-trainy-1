@@ -6,7 +6,7 @@ import App from './App';
 // import { createRoot } from 'react-dom/client';
 // const container = document.querySelector("#root");
 // const root = createRoot(container);
-//Реакт 18
+// Реакт 18
 // root.render(
 //  <App />,
 //   )
