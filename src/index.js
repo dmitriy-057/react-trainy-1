@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 // для относительного импорта
 // import App from './App';
 //для именованого импорта
-import { App2 } from '../components-2/App2';
+import { App2 } from './App2';
 
 
 
