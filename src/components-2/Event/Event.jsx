@@ -1,23 +1,26 @@
+import { FaMapMarkerAlt, FaUserAlt, FaCalendarAlt,FaClock } from "react-icons/fa";
+import { formatEventStart } from "./src/utils/time-util.js";
 import PropTypes from 'prop-types';
-import css from './Event.module.css'
+import css from './Event.module.css';
+
 export const Event = ({name,location,speaker,type,start,end}) => {
    return (
    <div className={css.event}>
     <h2 className={css.title}>{name}</h2>
     <p className={css.info}>
-        <i className={css.icon}></i>
-        {location}
+    <FaMapMarkerAlt className={css.icon} size={16} /> 
+    {location}
     </p>
     <p className={css.info}>
-        <i className={css.icon}></i>
+    <FaUserAlt className={css.icon} size={16} /> 
         {speaker}
     </p>
     <p className={css.info}>
-        <i className={css.icon}></i>
+    <FaCalendarAlt className={css.icon} size={16} /> 
         {start}
     </p>
     <p className={css.info}>
-        <i className={css.icon}></i>
+    <FaClock className={css.icon} size={16} /> 
         Duration
     </p>
     <span className={type}>Event type</span>
