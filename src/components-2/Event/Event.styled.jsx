@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const EventContainer = styled.div`
 position: relative;
-border: 2px dashed black;
+border: ${props=> `2px dashed ${props.theme.colors.black}`};
 padding: 8px;
 border-radius: 4px;
 `;
@@ -21,12 +21,30 @@ display: flex;
 align-items: center;
 margin-top: 0;
 margin-bottom: 8px;
-color: var(--color-primary-text: #212121);
+color: ${props=> `${props.theme.colors.primaryColor}`};
 font-size:16px;
-line-height: 24p;
+line-height: 24px;
 font-weight: 400;
-letter-spacing: 0.25px
+letter-spacing: 0.25px;
+
+svg {
+    display: block;
+    margin-right: 8px;
+    color: ${props=> `${props.theme.colors.secondaryColor}`};
+}
+
+&:hover, &:focus {
+    background-color: ${props=> `${props.theme.colors.black}`};
+    color: ${props=> `
+    ${props.theme.colors.white}`};
+    border-radius: 4px;
+    svg {
+        color: ${props=> `${props.theme.colors.white}`};
+    }
+}
+
 `;
+
 
 const setBgColor = props => {
 switch (props.eventType) {

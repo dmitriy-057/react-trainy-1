@@ -2,7 +2,7 @@ import { FaMapMarkerAlt, FaUserAlt, FaCalendarAlt,FaClock } from "react-icons/fa
 import { formatEventStart,formatEventDuration } from "../utils/index";
 import PropTypes from 'prop-types';
 
-import { EventContainer,EventTitle,EventInfo,Chip } from "./Event.styled";
+import { EventContainer,EventTitle,EventInfo, Chip } from "./Event.styled";
 
 export const Event = ({name,location,speaker,type,start,end}) => {
     const formattedStartTime = formatEventStart(start);
@@ -11,7 +11,7 @@ export const Event = ({name,location,speaker,type,start,end}) => {
    <EventContainer>
     <EventTitle>{name}</EventTitle>
     <EventInfo>
-    <FaMapMarkerAlt size={16} /> 
+        <FaMapMarkerAlt size={16} /> 
     {location}
     </EventInfo>
 
