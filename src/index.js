@@ -1,5 +1,5 @@
 import React from 'react';
-// В Реакт 18 импорт ReactDOM не нужен
+// // В Реакт 18 импорт ReactDOM не нужен
 // import ReactDOM from 'react-dom';
 import './index.css';
 // Для темизации;
@@ -24,8 +24,8 @@ root.render(
 //Реакт 17
 // ReactDOM.render(
 // <React.StrictMode>
-// {/* <App /> */}
-//     <App2 />
+// <App />
+//     {/* <App2 /> */}
 // </React.StrictMode>,
 // document.querySelector("#root")
 // );

@@ -4,11 +4,11 @@ import upcomingEvents from "./upcoming-events.json";
 import { Container } from './App2.styled'
 
 // именованый экспорт
-export const  App2 = () =>{
+export const  App2 = () => {
     return (
     <Container>
         <PageTitle text='24th Core Worlds Coalition Conference'/>
-        <EventBoard events={upcomingEvents}/>
+        <EventBoard events={upcomingEvents} />
     </Container>
     )
 }

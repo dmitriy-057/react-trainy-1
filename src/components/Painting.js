@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'; 
-import defaultImage from './default.jpg'
+import defaultImage from './default.jpg';
 // Компонент
 export default function Painting(props) {
     const {imgUrl = defaultImage, title, authorUrl, authorTag, price, quantity} = props;
